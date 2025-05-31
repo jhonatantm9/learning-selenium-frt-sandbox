@@ -1,0 +1,43 @@
+# Gradle build artifacts
+bin/
+build/
+.gradle
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
+
+# IDE configurations
+/.idea/
+/*.iml
+*.class
+
+.vscode/
+.code-workspace
+
+# Logs
+*.log
+
+# Selenium-related temporary files
+chromedriver.log
+screenshots/
+
+# Cucumber-generated reports
+target/
+reports/
+cucumber.json
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Java dependencies
+*.jar
+*.war
+*.ear
+
+# Temporary files
+*.swp
+*.swo
+
+# Test results
+/test-output/
