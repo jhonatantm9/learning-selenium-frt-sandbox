@@ -21,9 +21,14 @@ public class BasePage {
         BasePage.driver = driver;
     }
 
-    public void closeBrowser() {
+    public static void closeBrowser() {
         if (driver != null) {
             driver.quit();
         }
+    }
+
+    // Methods used by other pages
+    public void navigateTo(String url) {
+        driver.get(url);
     }
 }
