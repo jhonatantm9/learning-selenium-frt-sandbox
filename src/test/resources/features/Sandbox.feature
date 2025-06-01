@@ -4,3 +4,7 @@ Feature: Test different web elements
 
     Background: I am on the Free Range Testers Sandbox
         Given I navigate to Free Range Testers Sandbox
+
+    Scenario: View the hidden element
+        When I click on generate ID and show hidden element
+        Then I can see the hidden element with its ID
