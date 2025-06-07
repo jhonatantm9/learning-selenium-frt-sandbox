@@ -46,4 +46,21 @@ public class BasePage {
     public String getTextFromElement(String locator) {
         return Find(locator).getText();
     }
+
+    public void write(String locator, String keysToSend) {
+        Find(locator).clear();
+        Find(locator).sendKeys(keysToSend);
+    }
+
+    public void pause(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public String getValueFromElement(String locator) {
+        return Find(locator).getDomProperty("value");
+    }
 }

@@ -8,3 +8,12 @@ Feature: Test different web elements
     Scenario: View the hidden element
         When I click on generate ID and show hidden element
         Then I can see the hidden element with its ID
+
+    Scenario Outline: Enter message on boring input
+        When I enter <message> on input
+        And I wait a few seconds
+        Then I can see the value of the input element is <message>
+        Examples:
+            | message                |
+            | "Aprendiendo Selenium" |
+            | "Hola mundo"           |
